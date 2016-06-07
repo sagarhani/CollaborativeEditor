@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"collaborativeeditor-desc": "Multiple people will be albe to edit wiki page at same time.",
+	"collaborativeeditor-i18n-welcome": "Welcome to the localization file of the CollaborativeEditor extension.",
+	"collaborativeeditor-helloworld": "Hello world!",
+	"collaborativeeditor-helloworld-intro": "Welcome to the \"Hello world\" special page of the CollaborativeEditor extension.",
+	"helloworld": "Hello world"
+}

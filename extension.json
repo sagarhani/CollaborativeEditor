@@ -1,0 +1,53 @@
+{
+	"name": "CollaborativeEditor",
+	"version": "0.1.0",
+	"author": [
+		"Sagar Hani"
+	],
+	"url": "https://github.com/sagarhani/CollaborativeEditor",
+	"descriptionmsg": "collaborativeeditor-desc",
+	"license-name": "GPL v2",
+	"type": "other",
+	"AutoloadClasses": {
+		"CollaborativeEditorHooks": "CollaborativeEditor.hooks.php",
+		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
+	},
+	"config": {
+		"CollaborativeEditorEnableFoo": true
+	},
+	"ExtensionMessagesFiles": {
+		"CollaborativeEditorAlias": "CollaborativeEditor.i18n.alias.php"
+	},
+	"Hooks": {
+		
+		"ParserFirstCallInit": [
+			"CollaborativeEditorHooks::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"CollaborativeEditor": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.collaborativeEditor.foo": {
+			"scripts": [
+				"modules/ext.collaborativeEditor.js",
+				"modules/ext.collaborativeEditor.foo.js"
+			],
+			"styles": [
+				"modules/ext.collaborativeEditor.foo.css"
+			],
+			"messages": [],
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "CollaborativeEditor"
+	},
+	"SpecialPages": {
+		"HelloWorld": "SpecialHelloWorld"
+	},
+	"manifest_version": 1
+}
